@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container margin-bottom-100px">
+        <!--======= log_in_page =======-->
+        <div id="log-in" class="site-form log-in-form box-shadow border-radius-10">
+
+            <div class="form-output">
+
+                <form method="POST">
+                <div class="form-group label-floating">
+                        <label class="control-label">Your Name</label>
+                        <input class="form-control" placeholder="" type="text" name="uname" >
+                    </div>
+                    <div class="form-group label-floating">
+                        <label class="control-label">Your Number</label>
+                        <input class="form-control" placeholder="" type="number" name="numb" >
+                    </div>
+                <div class="form-group label-floating">
+                        <label class="control-label">Your Email</label>
+                        <input class="form-control" placeholder="" type="email" name="email">
+                    </div>
+                    <div class="form-group label-floating">
+                        <label class="control-label">Your Password</label>
+                        <input class="form-control" placeholder="" type="password" name="pass">
+                    </div>
+
+                    <div class="form-group label-floating">
+                        <label class="control-label">Confirm Your Password</label>
+                        <input class="form-control" placeholder="" type="password" name="cpass">
+                    </div>
+
+                    <div class="form-group label-floating is-select">
+                        <label class="control-label">Your Gender</label>
+                        <select class="selectpicker form-control" name="gender">
+						<option value="Male">Male</option>
+						<option value="Female">Female</option>
+					</select>
+                    </div>
+                    <div class="form-group label-floating">
+                        <label class="control-label">Address</label>
+                        <input class="form-control" placeholder="" type="text" name="address">
+                    </div>
+                    <div class="form-group label-floating">
+                        <label class="control-label">Date-of-Birth</label>
+                        <input class="form-control" placeholder="" type="date" name="dob" max="<?php echo date("Y-m-d")?>">
+                    </div>
+
+
+                    <div class="remember">
+                    </div>
+
+                    <div class="form-group label-floating">
+                        <input class="form-control" placeholder="" type="submit" name="submit" value="submit">            
+                        
+                    </div>
+
+
+
+                    <p>you have an account? <a href="admin_login.php"> Sing in !</a> </p>
+                </form>
+
+            </div>
+        </div>
+        <!--======= // log_in_page =======-->
+
+    </div>
+</body>
+</html>
